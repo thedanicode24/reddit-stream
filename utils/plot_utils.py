@@ -1,7 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-
+import requests
+from io import BytesIO
+from PIL import Image
+from rembg import remove
+from wordcloud import WordCloud
 
 def plot_time_series(data, 
                      interval_minutes=5, 
@@ -90,5 +94,20 @@ def plot_sentiment_over_time(data,
     plt.tight_layout()
     plt.show()
 
-
-
+def plot_wordcloud(url_img, testo, figsize=(12,8)):
+    response = requests.get(url_img)
+    img = Image.open(BytesIO(response.content))
+    
+    img_no_bg = remove(img)
+    
+    mask = img_no_bg.convert("L")
+    mask = np.array(mask)
+    mask = np.where(mask > 128, 255, 0)
+    
+    wc = WordCloud(width=800, height=400, background_color="white",
+                   mask=mask, contour_color='black', contour_width=1).generate(testo)
+    
+    plt.figure(figsize=figsize)
+    plt.imshow(wc, interpolation='bilinear')
+    plt.axis("off")
+    plt.show()
