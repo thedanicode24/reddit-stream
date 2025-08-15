@@ -67,7 +67,7 @@ pip install -r requirements.txt
 This project requires Reddit API credentials to work.
 1. Create a Reddit app at https://www.reddit.com/prefs/apps.
 2. Copy your client_id, client_secret, username, and password.
-3. Create a credentials.env file in the *credentials* folder with the following format:
+3. Create a credentials.env file with the following format:
 ```init
 CLIENT_ID=your_client_id
 CLIENT_SECRET=your_client_secret
