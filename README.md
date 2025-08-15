@@ -1,5 +1,13 @@
 # Real-Time Sentiment Analysis (Reddit Edition)
 
+![License](https://img.shields.io/badge/license-MIT-green)
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-2.2.6-blue?logo=NumPy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-2.3.1-lightblue?logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.10.5-orange?logo=matplotlib&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.7.1-yellow?logo=scikitlearn&logoColor=black)
+![NLTK](https://img.shields.io/badge/NLTK-3.9.1-lightgrey?logo=nltk&logoColor=black)
+
 📌 ## Overview
 This project analyzes comments from a specific subreddit on Reddit. It focuses on understanding user sentiment, identifying common topics, and visualizing frequently used words. The analysis is divided into multiple tasks using Python libraries for text processing, visualization, and topic modeling.
 Originally, it was designed to analyze tweets in real-time using Spark, but after Twitter/X restricted free API access in February 2023, the project was adapted to work with Reddit.
