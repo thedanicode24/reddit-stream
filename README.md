@@ -1,6 +1,6 @@
 # Real-Time Sentiment Analysis (Reddit Edition)
 
-## Overview
+📌 ## Overview
 This project analyzes comments from a specific subreddit on Reddit. It focuses on understanding user sentiment, identifying common topics, and visualizing frequently used words. The analysis is divided into multiple tasks using Python libraries for text processing, visualization, and topic modeling.
 Originally, it was designed to analyze tweets in real-time using Spark, but after Twitter/X restricted free API access in February 2023, the project was adapted to work with Reddit.
 
@@ -8,7 +8,7 @@ The project is still ongoing and uses Python in Jupyter Notebook for data collec
 
 ⚠️ **Important**: This project requires Python 3.10. Newer versions may not work correctly.
 
-## Features
+📫 ## Features
 - Real-time streaming of Reddit comments using **PRAW**.
 - Sentiment classification of comments into five categories using **NLTK VADER**
   - `strongly_negative`
@@ -22,7 +22,7 @@ The project is still ongoing and uses Python in Jupyter Notebook for data collec
 - Word Cloud Visualization
 - Topic Modeling using **TF-IDF** vectorization and **Latent Dirichlet Allocation**.
 
-## Future Work
+🔜 ## Future Improvements
 - Temporal analysis of sentiment and topics over time.
 - Emotion detection using NRC Emotion Lexicon.
 - User-based analysis (most active users, average sentiment per user).
@@ -32,7 +32,7 @@ The project is still ongoing and uses Python in Jupyter Notebook for data collec
 - Support multiple subreddits simultaneously.
 - Implement a live dashboard that updates in real-time.
 
-## Technologies
+🛠 ## Technologies
 
 - **Python 3.10** – main programming language, required for compatibility  
 - **Pandas & NumPy** – data manipulation and numerical computations  
@@ -44,7 +44,7 @@ The project is still ongoing and uses Python in Jupyter Notebook for data collec
 - **WordCloud** – generating word cloud visualizations  
 - **PRAW** – accessing Reddit API for comment extraction  
 
-## Usage
+📦 ## Usage
 1. Clone the repository:
 ```bash
 git clone https://github.com/thedanicode24/reddit-stream.git
@@ -63,7 +63,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Reddit API Credentials
+❗️ ## Reddit API Credentials
 This project requires Reddit API credentials to work.
 1. Create a Reddit app at https://www.reddit.com/prefs/apps.
 2. Copy your client_id, client_secret, username, and password.
@@ -76,5 +76,5 @@ PASSWORD=your_reddit_password
 ```
 4. Make sure the .env file is ignored by Git (included in .gitignore).
 
-## License
+📜 ## License
 This project is licensed under the MIT License.
